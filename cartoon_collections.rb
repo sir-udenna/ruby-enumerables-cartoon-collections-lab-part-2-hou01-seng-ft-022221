@@ -31,6 +31,7 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.map do |matches|
     if matches == valid_calls[i]
       return matches
+      binding.pry
     end
     binding.pry
     i += 1
