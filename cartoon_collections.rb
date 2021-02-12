@@ -30,7 +30,6 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.map do |matches|
     if matches == valid_calls[i]
       return matches
-      p matches
     end
     i += 1
   end
