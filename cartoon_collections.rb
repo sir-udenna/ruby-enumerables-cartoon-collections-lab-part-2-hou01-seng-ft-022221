@@ -29,5 +29,9 @@ def find_valid_calls(planeteer_calls)
   i = 0
   planeteer_calls.map do |matches|
     if matches == valid_calls[i]
+      return matches
+    end
+    i += 1
   end
+  return nil
 end
